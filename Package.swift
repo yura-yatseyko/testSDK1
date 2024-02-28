@@ -15,7 +15,7 @@ let package = Package(
             targets: ["PurpleSDK"]),
     ],
     dependencies: [
-//        .package(url: "https://github.com/hmlongco/Factory", from: "2.3.1"),
+        .package(url: "https://github.com/hmlongco/Factory", from: "2.3.1")
 //        .package(path: "./Data"),
 //        .package(path: "./Domain")
     ],
