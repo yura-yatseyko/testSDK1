@@ -17,9 +17,9 @@ import Repositories
 import Pilot
 import Factory
 
-//@MainActor
-//extension Container {
-//    
-//    // Network
-////    static let locationsAPI = Factory<LocationsAPIProtocol>(scope: .cached) { Pilot<CoinRoute>() }
-//}
+@MainActor
+extension Container {
+    
+    // Network
+//    static let locationsAPI = Factory<LocationsAPIProtocol>(scope: .cached) { Pilot<CoinRoute>() }
+}
