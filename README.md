@@ -1,1 +1,1 @@
-TestSDK v 1.1.
+Test SDK v 1.2.
