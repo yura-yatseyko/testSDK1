@@ -15,9 +15,9 @@ let package = Package(
             targets: ["PurpleSDK"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/hmlongco/Factory", from: "2.3.1"),
-        .package(path: "./Data"),
-        .package(path: "./Domain")
+//        .package(url: "https://github.com/hmlongco/Factory", from: "2.3.1"),
+//        .package(path: "./Data"),
+//        .package(path: "./Domain")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -26,16 +26,16 @@ let package = Package(
             name: "PurpleSDK",
             dependencies: [
                 // Domain layer
-                .product(name: "Entities", package: "Domain"),
-                .product(name: "RepositoryProtocol", package: "Domain"),
-                .product(name: "UseCaseProtocol", package: "Domain"),
-                .product(name: "UseCases", package: "Domain"),
-                // Data layer
-                .product(name: "NetworkCore", package: "Data"),
-                .product(name: "NetworkExtension", package: "Data"),
-                .product(name: "Repositories", package: "Data"),
-                // External libraries
-                .product(name: "Factory", package: "Factory")
+//                .product(name: "Entities", package: "Domain"),
+//                .product(name: "RepositoryProtocol", package: "Domain"),
+//                .product(name: "UseCaseProtocol", package: "Domain"),
+//                .product(name: "UseCases", package: "Domain"),
+//                // Data layer
+//                .product(name: "NetworkCore", package: "Data"),
+//                .product(name: "NetworkExtension", package: "Data"),
+//                .product(name: "Repositories", package: "Data"),
+//                // External libraries
+//                .product(name: "Factory", package: "Factory")
             ]
         ),
         .testTarget(
