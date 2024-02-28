@@ -15,8 +15,8 @@ let package = Package(
             targets: ["PurpleSDK"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/hmlongco/Factory", from: "2.3.1")
-//        .package(path: "./Data"),
+        .package(url: "https://github.com/hmlongco/Factory", from: "2.3.1"),
+        .package(path: "./Data"),
 //        .package(path: "./Domain")
     ],
     targets: [
@@ -30,10 +30,10 @@ let package = Package(
 //                .product(name: "RepositoryProtocol", package: "Domain"),
 //                .product(name: "UseCaseProtocol", package: "Domain"),
 //                .product(name: "UseCases", package: "Domain"),
-//                // Data layer
-//                .product(name: "NetworkCore", package: "Data"),
-//                .product(name: "NetworkExtension", package: "Data"),
-//                .product(name: "Repositories", package: "Data"),
+                // Data layer
+                .product(name: "NetworkCore", package: "Data"),
+                .product(name: "NetworkExtension", package: "Data"),
+                .product(name: "Repositories", package: "Data"),
 //                // External libraries
 //                .product(name: "Factory", package: "Factory")
             ]
