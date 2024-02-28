@@ -34,8 +34,8 @@ let package = Package(
                 .product(name: "NetworkCore", package: "Data"),
                 .product(name: "NetworkExtension", package: "Data"),
                 .product(name: "Repositories", package: "Data"),
-//                // External libraries
-//                .product(name: "Factory", package: "Factory")
+                // External libraries
+                .product(name: "Factory", package: "Factory")
             ]
         ),
         .testTarget(
