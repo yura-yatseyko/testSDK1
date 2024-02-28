@@ -3,7 +3,6 @@
 
 import PackageDescription
 
-
 let package = Package(
     name: "PurpleSDK",
     platforms: [
@@ -44,3 +43,9 @@ let package = Package(
             dependencies: ["PurpleSDK"]),
     ]
 )
+
+//extension Package.Dependency {
+//    public static func package(path: String) -> Package.Dependency {
+//
+//    }
+//}
