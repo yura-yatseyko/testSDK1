@@ -29,6 +29,7 @@ let package = Package(
             name: "PurpleSDK",
             dependencies: [
                 .product(name: "Factory", package: "Factory"),
+                "MyLibrary1"
 //                .product(name: "MyLibrary1", package: "..")
 //                .product(name: "MyLibrary1", package: "-MyLibrary1")
             ]
