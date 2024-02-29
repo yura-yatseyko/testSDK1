@@ -16,9 +16,9 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/hmlongco/Factory", from: "2.3.1"),
-//        .package(url: "https://github.com/yura-yatseyko/testSDK1", branch: "main")
+        .package(url: "https://github.com/yura-yatseyko/testSDK1", branch: "main")
 //        .package(url: "https://github.com/yura-yatseyko/testSDK1/", branch: "main")
-        .package(name: "Home", path: "../Home"),
+//        .package(name: "Home", path: "../Home"),
 //        .package(path: "./Domain")
     ],
     targets: [
