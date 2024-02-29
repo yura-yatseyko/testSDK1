@@ -6,12 +6,12 @@
 //
 
 import SwiftUI
-//import Home
+import Home
 
 public struct PurpleSDKMainView: View {
     public init() {}
     public var body: some View {
         Text("Text label")
-//        HomeView()
+        HomeView()
     }
 }
