@@ -16,7 +16,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/hmlongco/Factory", from: "2.3.1"),
-        .package(name: "Home", path: "Home"),
+//        .package(name: "Home", path: "Home"),
 //        .package(path: "./Domain")
     ],
     targets: [
@@ -36,7 +36,7 @@ let package = Package(
 //                .product(name: "Repositories", package: "Data"),
                 // External libraries
                 .product(name: "Factory", package: "Factory"),
-                .product(name: "Home", package: "Home")
+//                .product(name: "Home", package: "Home")
             ]
         ),
         .testTarget(
