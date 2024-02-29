@@ -11,6 +11,7 @@ import MyLibrary1
 public struct PurpleSDKMainView: View {
     public init() {}
     public var body: some View {
+        Text("Test text")
         MyLibrary1View()
     }
 }

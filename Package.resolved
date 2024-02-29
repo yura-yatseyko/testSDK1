@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "-mylibrary1",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yura-yatseyko/-MyLibrary1",
+      "state" : {
+        "branch" : "main",
+        "revision" : "43bbc7249f25635d49c6cd3537ce8c2ba2e06868"
+      }
+    },
+    {
       "identity" : "factory",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/hmlongco/Factory",

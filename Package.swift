@@ -16,7 +16,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/hmlongco/Factory", from: "2.3.1"),
-        .package(path: "./MyLibrary1")
+        .package(url: "https://github.com/yura-yatseyko/-MyLibrary1", branch: "main")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -25,7 +25,7 @@ let package = Package(
             name: "PurpleSDK",
             dependencies: [
                 .product(name: "Factory", package: "Factory"),
-                .product(name: "MyLibrary1", package: "MyLibrary1")
+                .product(name: "MyLibrary1", package: "-MyLibrary1")
             ]
         ),
         .testTarget(
