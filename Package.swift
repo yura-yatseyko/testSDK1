@@ -38,7 +38,7 @@ let package = Package(
 //                .product(name: "Repositories", package: "Data"),
                 // External libraries
                 .product(name: "Factory", package: "Factory"),
-                .product(name: "Home", package: "testSDK1")
+                .product(name: "testSDK1", package: "testSDK1")
             ]
         ),
         .testTarget(
