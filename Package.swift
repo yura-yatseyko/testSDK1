@@ -16,6 +16,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/hmlongco/Factory", from: "2.3.1"),
+        .package(url: "https://github.com/yura-yatseyko/testSDK1/tree/main/Home", branch: "main")
+//        .package(url: "https://github.com/yura-yatseyko/testSDK1/", branch: "main")
 //        .package(name: "Home", path: "Home"),
 //        .package(path: "./Domain")
     ],
@@ -36,7 +38,7 @@ let package = Package(
 //                .product(name: "Repositories", package: "Data"),
                 // External libraries
                 .product(name: "Factory", package: "Factory"),
-//                .product(name: "Home", package: "Home")
+                .product(name: "Home", package: "Home")
             ]
         ),
         .testTarget(
@@ -44,9 +46,3 @@ let package = Package(
             dependencies: ["PurpleSDK"]),
     ]
 )
-
-//extension Package.Dependency {
-//    public static func package(path: String) -> Package.Dependency {
-//
-//    }
-//}
