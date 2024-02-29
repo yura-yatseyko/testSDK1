@@ -16,8 +16,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/hmlongco/Factory", from: "2.3.1"),
-        .package(name: "Data", path: "./Data"),
-//        .package(name: "Domain", path: "./Domain")
+        .package(name: "Home", path: "Home"),
+//        .package(path: "./Domain")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -31,11 +31,12 @@ let package = Package(
 //                .product(name: "UseCaseProtocol", package: "Domain"),
 //                .product(name: "UseCases", package: "Domain"),
                 // Data layer
-                .product(name: "NetworkCore", package: "Data"),
-                .product(name: "NetworkExtension", package: "Data"),
-                .product(name: "Repositories", package: "Data"),
+//                .product(name: "NetworkCore", package: "Data"),
+//                .product(name: "NetworkExtension", package: "Data"),
+//                .product(name: "Repositories", package: "Data"),
                 // External libraries
-                .product(name: "Factory", package: "Factory")
+                .product(name: "Factory", package: "Factory"),
+                .product(name: "Home", package: "Home")
             ]
         ),
         .testTarget(
