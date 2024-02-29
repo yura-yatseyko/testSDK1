@@ -16,7 +16,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/hmlongco/Factory", from: "2.3.1"),
-        .package(url: "https://github.com/yura-yatseyko/testSDK1", branch: "main")
+//        .package(url: "https://github.com/yura-yatseyko/testSDK1", branch: "main")
 //        .package(url: "https://github.com/yura-yatseyko/testSDK1/", branch: "main")
 //        .package(name: "Home", path: "../Home"),
 //        .package(path: "./Domain")
@@ -38,7 +38,7 @@ let package = Package(
 //                .product(name: "Repositories", package: "Data"),
                 // External libraries
                 .product(name: "Factory", package: "Factory"),
-                .product(name: "testSDK1", package: "testSDK1")
+//                .product(name: "Home", package: "testSDK1")
             ]
         ),
         .testTarget(
