@@ -17,7 +17,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/hmlongco/Factory", from: "2.3.1"),
 //        .package(url: "../", branch: "main")
-        .package(url: "file://", branch: "main")
+        .package(url: "file:///MyLibrary1", branch: "main")
 //        .package(name: "MyLibrary1", path: "./MyLibrary1")
 //        .package(name: "MyLibrary1", url: "https://github.com/yura-yatseyko/testSDK1", branch: "main")
 //        .package(path: "./MyLibrary1")
