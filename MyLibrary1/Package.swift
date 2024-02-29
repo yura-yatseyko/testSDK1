@@ -4,32 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "PurpleSDK",
+    name: "MyLibrary1",
     platforms: [
         .iOS(.v15)
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "PurpleSDK",
-            targets: ["PurpleSDK"]),
-    ],
-    dependencies: [
-        .package(url: "https://github.com/hmlongco/Factory", from: "2.3.1"),
-        .package(path: "./MyLibrary1")
+            name: "MyLibrary1",
+            targets: ["MyLibrary1"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "PurpleSDK",
-            dependencies: [
-                .product(name: "Factory", package: "Factory"),
-                .product(name: "MyLibrary1", package: "MyLibrary1")
-            ]
-        ),
+            name: "MyLibrary1"),
         .testTarget(
-            name: "PurpleSDKTests",
-            dependencies: ["PurpleSDK"]),
+            name: "MyLibrary1Tests",
+            dependencies: ["MyLibrary1"]),
     ]
 )
